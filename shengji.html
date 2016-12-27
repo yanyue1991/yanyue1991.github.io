@@ -1,0 +1,72 @@
+<head>
+  <style>
+    .none  { background-color: #fff }
+    .one { background-color: #ccc }
+    .two  { background-color: #999 }
+  </style>
+  <script>
+    function cSwap(cell){  
+    if (cell.className == "none")
+        cell.className = "one";
+    else if (cell.className == "one")
+        cell.className = "two";
+    }
+  </script>
+</head>
+<body>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse:collapse;border-color:rgb(136,136,136);border-width:1px">
+<tbody>
+<tr>
+  <td class="none" onclick='cSwap(this)' style="width:58px;height:23px"><font color="#ff0000">&nbsp;Joker<span>&nbsp;&nbsp;</span></font></td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♠️K</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♥️K</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♣️K</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♦️K</td>
+</tr>
+<tr>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;Joker</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♠️10</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♥️10</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♣️10</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♦️10</td>
+</tr>
+<tr>
+<td></td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♠️5</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♥️5</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♣️5</td>
+<td class="none" onclick='cSwap(this)' style="width:58px;height:23px">&nbsp;♦️5</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table border="1" bordercolor="#888" cellspacing="0" style="border-collapse: collapse; border-color: rgb(136, 136, 136); border-width: 1px;">
+<tbody>
+<tr>
+<td style="width: 60px;">&nbsp;左边</td>
+<td style="width: 60px;">&nbsp;对家</td>
+<td style="width: 60px;">&nbsp;右边</td>
+</tr>
+<tr>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♠️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♠️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♠️</td>
+</tr>
+<tr>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♥️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♥️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♥️</td>
+</tr>
+<tr>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♣️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♣️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♣️</td>
+</tr>
+<tr>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♦️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♦️</td>
+<td class="none" onclick='cSwap(this)' style="width: 60px;">&nbsp;♦️</td>
+</tr>
+</tbody>
+</table>
+</body>
