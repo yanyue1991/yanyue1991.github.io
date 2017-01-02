@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Introspect by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Lakewood Cabins</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Lakewood Cabins</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="https://secure.rezovation.com/Reservations/AvailabilityCalendar.aspx?s=0g4rmrZ3O3#">Availability</a>
+						<a href="cabins.html">Cabins</a>
+						<a href="generic.html">Generic</a>
+						<a href="elements.html">Elements</a>
+					</nav>
+				</div>
+			</header>
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h1>Lakewood Cabins: <span>Brief Intro Here<br />
+					Continue introduction</span></h1>
+					<ul class="actions">
+						<li><a href="https://secure.rezovation.com/Reservations/AvailabilityCalendar.aspx?s=0g4rmrZ3O3#" class="button alt">BOOK NOW</a></li>
+					</ul>
+				</div>
+				 <script>
+					//Array of images which you want to show: Use path you want.
+					var images=new Array('LC/LC-winter.jpg', 'LC/LC-yard-new.jpg', 'LC/LC-snow-new.jpg', 'LC/LC-playset.jpg');
+					var nextimage=0;
+					doSlideshow();
+
+					function doSlideshow(){
+					    if(nextimage>=images.length){nextimage=0;}
+					    $('#banner')
+					    .css('background-image','url("'+images[nextimage++]+'")')
+					    .fadeIn(1000,function(){
+					        setTimeout(doSlideshow,4000);
+					    });
+					}
+				</script>
+			</section>
+
+		<!-- One -->
+			<section id="one">
+				<div class="inner">
+					<header>
+						<h2>Lakewood Cabins</h2>
+					</header>
+					<p>In the center of Big Bear Valley, suitable for both winter activities and summer events. X minutes to Ski resort, Y minutes to Big Bear Lake. Best place for vacations and family events with affordable prices. Family friendly with playground on-site for the kids. MORE COMPLIMENTS.</p>
+<!-- 					<ul class="actions">
+						<li><a href="#" class="button alt">Locations and More</a></li>
+					</ul> -->
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<header>
+								<h3>Studio Cabins</h3>
+							</header>
+							<div class="image fit">
+
+								<img src="cabin/cabin_10_fireplace.JPG" alt="" />
+							</div>
+							<p>Our studio cabins equipped with A, B, C and D, at more affordable prices. Best for group of 1-2.<!--  <a href="#">Learn More...</a> --></p>
+							<a href="#" class="button special">BOOK NOW</a>
+						</div>
+					</article>
+					<article class="alt">
+						<div class="content">
+							<header>
+								<h3>1 Bedroom Cabins</h3>
+							</header>
+							<div class="image fit">
+								<img src="cabin/cabin_3_livingroom.JPG" alt="" />
+							</div>
+							<p>The one bedroom cabins are larger than studio cabins, featured with <strong>E(something studio cabins don't have)</strong>. Also equipped with A, B, C and D. Best for group of 1-4 people. <!-- <a href="#">Learn More...</a> --></p>
+							<a href="#" class="button special">BOOK NOW</a>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three">
+				<div class="inner">
+					<article>
+						<div class="content">
+							<span class="icon fa-snowflake-o"></span>
+							<header>
+								<h3>Big Bear Mountains</h3>
+							</header>
+							<p>Bear Mountain is an innovator in Park design and development. This combined with features spread over our 748 permitted acres is why Bear Mountain is the home mountain to many world-class athletes including our Bear Team riders.</p>
+							<ul class="actions">
+								<li><a href="http://www.bigbearmountainresort.com/winter/mountains/mountains/bear-mountain/about-bear-mountain" class="button alt">Website</a></li>
+							</ul>
+						</div>
+					</article>
+					<article>
+						<div class="content">
+							<span class="icon fa-snowflake-o"></span>
+							<header>
+								<h3>Snow Summit</h3>
+							</header>
+							<p>With one of the largest Learning Area’s in Southern California and a brand new facility designed for first time visitors, Snow Summit teaches people to ski and ride everyday. Offering night Skiing sessions.</p>
+							<ul class="actions">
+								<li><a href="http://www.bigbearmountainresort.com/winter/mountains/mountains/snow-summit" class="button alt">Website</a></li>
+							</ul>
+						</div>
+					</article>
+					<article>
+					<div class="content">
+							<span class="icon fa-shopping-bag"></span>
+							<header>
+								<h3>Big Bear Lake</h3>
+							</header>
+							<p>Big Bear Lake is your source for outdoor activities – try tree rope climbing, paddle boarding or visit the local swim beach. The seven mile lake offers serenity unlike any other in the mountains – cast out a line year round and try your hand at fishing.</p>
+							<ul class="actions">
+								<li><a href="http://www.bigbear.com/things-to-do/" class="button alt">Website</a></li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<div class="inner">
+					<header>
+						<h2>Get in Touch</h2>
+					</header>
+					<p><strong>Reservations:</strong> Call the owner at 858-753-8188</p>
+					<p><strong>On site issues:</strong> Call the onsite manager David at 909-520-7591</p>
+<!-- 					<form method="post" action="#">
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="alt" /></li>
+						</ul>
+					</form> -->
+					<div class="copyright">
+						&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+					</div>
+				</div>
+			</section>
+
+
+
+	</body>
+</html>
