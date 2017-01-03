@@ -48,8 +48,42 @@
 			
 			function changeSrc(n) {
 				console.log(n);
+				var content = node.parentNode;
+				switch(n) {
+					case 2:
+						document.getElementsById("s_livingroom").src="cabin/cabin_2_livingroom.jpg";
+						document.getElementsById("sth_livingroom").src="cabin/cabin_2_livingroom.jpg";
+						document.getElementsById("s_kitchen").src="cabin/cabin_2_kitchenette.jpg";
+						document.getElementsById("sth_kitchen").src="cabin/cabin_2_kitchenette.jpg";
+						document.getElementsById("s_bed").src="cabin/cabin_2_bed.jpg";
+						document.getElementsById("sth_bed").src="cabin/cabin_2_bed.jpg";
+						document.getElementsById("s_bath").src="cabin/cabin_2_bathroom.jpg";
+						document.getElementsById("sth_bath").src="cabin/cabin_2_bathroom.jpg";
+						break;
+					case 10:
+						document.getElementsById("s_livingroom").src="cabin/cabin_10_fireplace.jpg";
+						document.getElementsById("sth_livingroom").src="cabin/cabin_10_fireplace.jpg";
+						document.getElementsById("s_kitchen").src="cabin/cabin_10_kitchenette.jpg";
+						document.getElementsById("sth_kitchen").src="cabin/cabin_10_kitchenette.jpg";
+						document.getElementsById("s_bed").src="cabin/cabin_10_bed.jpg";
+						document.getElementsById("sth_bed").src="cabin/cabin/cabin_10_bed.jpg";
+						document.getElementsById("s_bath").src="cabin/cabin_2_bathroom.jpg";
+						document.getElementsById("sth_bath").src="cabin/cabin_2_bathroom.jpg";
+						break;
+					case 11:
+						document.getElementsById("s_livingroom").src="cabin/cabin_11_fireplace.jpg";
+						document.getElementsById("sth_livingroom").src="cabin/cabin_11_fireplace.jpg";
+						document.getElementsById("s_kitchen").src="cabin/cabin_11_kitchenette.jpg";
+						document.getElementsById("sth_kitchen").src="cabin/cabin_11_kitchenette.jpg";
+						document.getElementsById("s_bed").src="cabin/cabin_11_bed.jpg";
+						document.getElementsById("sth_bed").src="cabin/cabin_11_bed.jpg";
+						document.getElementsById("s_bath").src="cabin/cabin_11_bath.jpg";
+						document.getElementsById("sth_bath").src="cabin/cabin_11_bath.jpg";
+						break;
+					default:
+						break;
+				}
 			}
-				
 		</script>
 	</head>
 	<body>
@@ -114,27 +148,27 @@
 					<article>
 						<div class="content">
 							<header>
-								<h3>Studio Cabins<a onclick="changeSrc(this, 2)">#2</a><a onclick="changeSrc(this, 10)">#10</a><a onclick="changeSrc(this, 11)">#11</a></h3>
+								<h3>Studio Cabins:<a onclick="changeSrc(this, 2)"> #2,</a><a onclick="changeSrc(this, 10)"> #10,</a><a onclick="changeSrc(this, 11)"> #11</a></h3>
 							</header>
 							<div class="image fit">
 								<div class="w3-content" style="max-width:1200px;max-height:1200px;">
 									<img class="mySlides" id="s_livingroom" src="cabin/cabin_4_livingroom.jpg" style="width:100%;display:block" >
 									<img class="mySlides" id="s_kitchen" src="cabin/cabin_4_kitchen.jpg" style="width:100%;display:none">
-									<img class="mySlides" id="s_cabin" src="cabin/cabin_4_bed.jpg" style="width:100%;display:none">
+									<img class="mySlides" id="s_bed" src="cabin/cabin_4_bed.jpg" style="width:100%;display:none">
 									<img class="mySlides" id="s_bath" src="cabin/cabin_4_bath.jpg" style="width:100%;display:none">
 
 									<div class="w3-row-padding w3-section">
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_4_livingroom.jpg" style="width:100%" onclick="currentDiv(this, 1)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="sth_livingroom" src="cabin/cabin_4_livingroom.jpg" style="width:100%" onclick="currentDiv(this, 1)">
 										</div>
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_4_kitchen.jpg" style="width:100%" onclick="currentDiv(this, 2)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="sth_kitchen" src="cabin/cabin_4_kitchen.jpg" style="width:100%" onclick="currentDiv(this, 2)">
 										</div>
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_4_bed.jpg" style="width:100%" onclick="currentDiv(this, 3)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="sth_bed" src="cabin/cabin_4_bed.jpg" style="width:100%" onclick="currentDiv(this, 3)">
 										</div>
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_4_bath.jpg" style="width:100%" onclick="currentDiv(this, 4)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="sth_bath" src="cabin/cabin_4_bath.jpg" style="width:100%" onclick="currentDiv(this, 4)">
 										</div>
 									</div>
 								</div>
@@ -158,16 +192,16 @@
 
 									<div class="w3-row-padding w3-section">
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_livingroom.jpg" style="width:100%" onclick="currentDiv(this, 1)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="cth_living" src="cabin/cabin_3_livingroom.jpg" style="width:100%" onclick="currentDiv(this, 1)">
 										</div>
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_kitchen.jpg" style="width:100%" onclick="currentDiv(this, 2)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="cth_kitchen" src="cabin/cabin_3_kitchen.jpg" style="width:100%" onclick="currentDiv(this, 2)">
 										</div>
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_bedroom.jpg" style="width:100%" onclick="currentDiv(this, 3)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="cth_bed" src="cabin/cabin_3_bedroom.jpg" style="width:100%" onclick="currentDiv(this, 3)">
 										</div>
 										<div class="w3-col s3">
-											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_bathroom.jpg" style="width:100%" onclick="currentDiv(this, 4)">
+											<img class="demo w3-opacity w3-hover-opacity-off" id="cth_bath" src="cabin/cabin_3_bathroom.jpg" style="width:100%" onclick="currentDiv(this, 4)">
 										</div>
 									</div>
 								</div>
