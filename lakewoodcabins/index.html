@@ -185,7 +185,7 @@
 					    if(nextimage>=images.length){nextimage=0;}
 					    $('#banner')
 					    .css('background-image','url("'+images[nextimage++]+'")')
-					    .fadeOut(500,function(){
+					    .fadeIn(500,function(){
 					        setTimeout(doSlideshow,4000);
 					    });
 					}
