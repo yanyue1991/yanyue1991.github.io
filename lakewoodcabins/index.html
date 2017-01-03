@@ -32,7 +32,6 @@
 
 			function showDivs(node, n) {
 				var i;
-				console.log(node);
 				var x = node.getElementsByClassName("mySlides");
 				var dots = document.getElementsByClassName("demo");
 				if (n > x.length) {slideIndex = 1}
@@ -46,6 +45,11 @@
 				x[slideIndex-1].style.display = "block";
 				dots[slideIndex-1].className += " w3-opacity-off";
 			}
+			
+			function changeSrc(n) {
+				console.log(n);
+			}
+				
 		</script>
 	</head>
 	<body>
@@ -110,8 +114,7 @@
 					<article>
 						<div class="content">
 							<header>
-								<h3>Studio Cabins</h3>
-								<div class="button alt fit">1</div>
+								<h3>Studio Cabins<div class="button alt fit" onclick=changeSrc(this, 2)>#2</div><div class="button alt fit" onclick=changeSrc(this, 10)>#10</div><div class="button alt fit" onclick=changeSrc(this, 11)>#11</div></h3>
 							</header>
 							<div class="image fit">
 								<div class="w3-content" style="max-width:1200px;max-height:1200px;">
