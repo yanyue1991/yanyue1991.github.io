@@ -15,6 +15,34 @@
 		<script src="assets/js/skel.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script>
+			var slideIndex = 1;
+			function plusDivs(m, n) {
+				showDivs(m.parentNode.parentNode.parentNode, slideIndex += n);
+			}
+
+			function currentDiv(m, n) {
+				showDivs(m.parentNode.parentNode.parentNode, slideIndex = n);
+				console.log(m.parentNode.parentNode.parentNode);
+			}
+
+			function showDivs(node, n) {
+				var i;
+				console.log(node);
+				var x = node.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("demo");
+				if (n > x.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = x.length}
+				for (i = 0; i < x.length; i++) {
+					 x[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					 dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+				}
+				x[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " w3-opacity-off";
+			}
+		</script>
 	</head>
 	<body>
 
@@ -94,7 +122,28 @@
 								<h3>1 Bedroom Cabins</h3>
 							</header>
 							<div class="image fit">
-								<img src="cabin/cabin_3_livingroom.JPG" alt="" />
+								<div class="w3-content" style="max-width:1200px">
+									<img class="mySlides" src="cabin/cabin_3_livingroom.JPG" style="width:100%;display:block" >
+									<img class="mySlides" src="cabin/cabin_3_kitchen.jpg" style="width:100%">
+									<img class="mySlides" src="cabin/cabin_3_bedroom.jpg" style="width:100%">
+									<img class="mySlides" src="cabin/cabin_3_bathroom.jpg" style="width:100%">
+
+									<div class="w3-row-padding w3-section">
+										<div class="w3-col s4">
+											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_livingroom.JPG" style="width:100%" onclick="currentDiv(this, 1)">
+										</div>
+										<div class="w3-col s4">
+											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_kitchen.jpg" style="width:100%" onclick="currentDiv(this, 2)">
+										</div>
+										<div class="w3-col s4">
+											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_bedroom.jpg" style="width:100%" onclick="currentDiv(this, 3)">
+										</div>
+										<div class="w3-col s4">
+											<img class="demo w3-opacity w3-hover-opacity-off" src="cabin/cabin_3_bathroom.jpg" style="width:100%" onclick="currentDiv(this, 4)">
+										</div>
+									</div>
+								</div>
+							<!-- 								<img src="cabin/cabin_3_livingroom.JPG" alt="" /> -->
 							</div>
 							<p>The one bedroom cabins are larger than studio cabins, featured with <strong>a bedroom with one <em>queen</em> bed, a full size futon in the living room, and a full kitchen with refrigerator and stove</strong>. Also equipped with fireplace, cable TV, DVD player, microwave, toaster and coffee maker. Best for group of 1-4 people.</p>
 							<a href="#" class="button special">BOOK NOW</a>
