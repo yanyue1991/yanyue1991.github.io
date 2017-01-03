@@ -46,10 +46,11 @@
 				dots[slideIndex-1].className += " w3-opacity-off";
 			}
 			
-			function changeSrc(n) {
+			function changeSrc(node, n) {
 				console.log(n);
 				var content = node.parentNode;
 				switch(n) {
+						//Studios
 					case 2:
 						document.getElementsById("s_livingroom").src="cabin/cabin_2_livingroom.jpg";
 						document.getElementsById("sth_livingroom").src="cabin/cabin_2_livingroom.jpg";
@@ -80,6 +81,8 @@
 						document.getElementsById("s_bath").src="cabin/cabin_11_bath.jpg";
 						document.getElementsById("sth_bath").src="cabin/cabin_11_bath.jpg";
 						break;
+						// One bedrooms
+						
 					default:
 						break;
 				}
