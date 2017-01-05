@@ -3368,7 +3368,7 @@
 		background-image: url("../../LC/LC-winter.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-position: center 30%;
 		text-align: left;
 		position: relative;
 		z-index: 9999;
